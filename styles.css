@@ -46,24 +46,14 @@ body {
   color: rgb(250, 251, 252);
   display: block;
   font-family: Roboto, Arial, sans-serif;
-  font-size: 57.96px;
+  font-size: var(--headerFontSize);
   font-weight: 900;
-  height: 139.094px;
   letter-spacing: -2px;
-  line-height: 69.552px;
-  margin-block-end: 16px;
-  margin-block-start: 0px;
+  line-height: 1.2;
   margin-bottom: 16px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
   max-width: 100%;
   position: relative;
   text-align: left;
-  unicode-bidi: isolate;
-  width: 750px;
 }
 
 .cs-text {
