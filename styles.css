@@ -1,0 +1,242 @@
+/* Root Variables (Global) */
+:root {
+  --primary: #ff6a3e;
+  --primaryLight: #ffba43;
+  --secondary: #ffba43;
+  --secondaryLight: #ffba43;
+  --headerColor: #1a1a1a;
+  --bodyTextColor: #4e4b66;
+  --bodyTextColorWhite: #fafbfc;
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+/* Global Reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Typography Utility Classes */
+.cs-topper {
+  color: rgb(255, 106, 62);
+  display: block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15.456px;
+  font-weight: 700;
+  height: 18.5469px;
+  letter-spacing: 1.5456px;
+  line-height: 18.5472px;
+  margin-bottom: 4px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 336.734px;
+}
+
+.cs-title {
+  box-sizing: border-box;
+  color: rgb(250, 251, 252);
+  display: block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 57.96px;
+  font-weight: 900;
+  height: 139.094px;
+  letter-spacing: -2px;
+  line-height: 69.552px;
+  margin-block-end: 16px;
+  margin-block-start: 0px;
+  margin-bottom: 16px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  max-width: 100%;
+  position: relative;
+  text-align: left;
+  unicode-bidi: isolate;
+  width: 750px;
+}
+
+.cs-text {
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  max-width: 40.625rem;
+  margin: 0;
+  color: var(--bodyTextColor);
+}
+
+/* ---------------------------------------------- */
+/*                    Hero Styles                 */
+/* ---------------------------------------------- */
+
+/* Mobile First */
+@media only screen and (min-width: 0rem) {
+  #hero-1856 {
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1856 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  #hero-1856 .cs-content {
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1856 .cs-title,
+  #hero-1856 .cs-text {
+    text-align: left;
+    color: var(--bodyTextColorWhite);
+  }
+
+  #hero-1856 .cs-text {
+    margin-bottom: 2rem;
+  }
+
+  #hero-1856 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 12.5rem;
+    margin: 0;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #hero-1856 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+
+  #hero-1856 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+
+  #hero-1856 .cs-content-graphic {
+    height: 305%;
+    max-height: 81.25rem;
+    filter: brightness(60%);
+    width: auto;
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%);
+    z-index: -3;
+  }
+
+  #hero-1856 .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  #hero-1856 .cs-graphic-dark {
+    display: none;
+  }
+
+  #hero-1856 .cs-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  #hero-1856 .cs-background::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    pointer-events: none;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #hero-1856 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48rem) {
+  #hero-1856 .cs-background::before {
+    content: none;
+  }
+}
+
+/* Desktop Parallax */
+@media only screen and (min-width: 81.25rem) {
+  #hero-1856 .cs-background {
+    background: url("assets/images/gym-hero-image-2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #hero-1856 .cs-background img {
+    display: none;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 120rem) {
+  #hero-1856 {
+    padding-bottom: 14vw;
+  }
+}
